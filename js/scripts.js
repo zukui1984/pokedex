@@ -18,15 +18,17 @@ pokemonList.forEach(function (name) {
 
 // IIFE
 let pokemonRepository = (function () {
-    let pokemonList = [
-        { name: "Pikachu", height: 7, abilities: ["power"], types: ["thunder", "electric"] },
-        { name: "Clefairy", height: 2, abilities: ["speed"], types: ["fairy", "fly"] },
-        { name: "Psyduck", height: 2.07, abilities: ["strong"], types: ["water", "flood"] }
-    ];
+    let pokemonList = [];
+    let apiUrl = "https://pokeapi.co/api/v2/pokemon/";
 
-    function showDetails(pokemon) {
-        console.log(pokemon);
-    }
+    function add(pokemon) {
+        if (
+          typeof pokemon === "object" && "name" in pokemon
+        ) {
+          pokemonList.push(pokemon);
+        } else {console.log("pokemon is not correct");
+        }
+      }
 
     function getAll() {
         return pokemonList;
