@@ -85,7 +85,7 @@ function showDetails(item) {
     loadDetails: loadDetails,
     showDetails: showDetails
   };
-})();
+}();
 
 console.log(pokemonRepository.getAll());
 pokemonRepository.add({
