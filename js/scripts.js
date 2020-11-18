@@ -59,12 +59,25 @@ let pokemonRepository = (function () {
       });
   }
 
-  function showDetails(item) {
-    pokemonRepository.loadDetails(item).then(function () {
-      console.log(item);
+  function showDetails(pokemon) {
+    loadDetails(pokemon).then(function () {
+      showModal(pokemon);
     });
   }
 
+  function showModal(pokemon) {
+     let nameElement = $('<h1>' + pokemon.name + '</h1>');
+
+     let heightElement = $('<p>' + pokemon.height + '</p');
+
+     let imageElement = image.pokemon;
+
+     modal.appenChild(nameElement);
+     modal.appenChild(heightElement);
+
+  }
+
+  // return mode - to show the final results
   return {
     add: add,
     getAll: getAll,
@@ -87,3 +100,5 @@ pokemonRepository.loadList().then(function () {
     pokemonRepository.addListItem(pokemon);
   });
 });
+
+
