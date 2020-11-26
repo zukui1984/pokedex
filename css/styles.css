@@ -51,7 +51,7 @@ body {
 .modal-close {
   float: right;
   -webkit-appearance: none;
-  border: 0;
+  border: inline;
   background: none;
   color: SlateBlue;
   text-decoration: underline;
@@ -64,8 +64,4 @@ ul {
 
 .modal-body {
     background-color: #add8e6;
-}
-
-.navbar-toggler {
-  margin-right: 70px;
 }
