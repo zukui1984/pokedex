@@ -16,8 +16,10 @@ let pokemonRepository = (function () {
     let pokemonList = document.querySelector(".pokemon-list");
     let listPokemon = document.createElement("li");
     let button = document.createElement("button");
-    button.innerText = pokemon.name;
-    button.classList.add("button-class");
+    button.innerText = pokemon.name;    
+    button.classList.add('btn', 'btn-secondary', 'btn-block');
+    button.setAttribute('data-target', '#pokedex');
+    button.setAttribute('data-toggle', 'modal');
     listPokemon.appendChild(button);
     pokemonList.appendChild(listPokemon);
     button.addEventListener("click", function () {
@@ -39,8 +41,8 @@ let pokemonRepository = (function () {
           add(pokemon);
         });
       })
-      .catch(function (a) {
-        console.error(a);
+      .catch(function (e) {
+        console.error(e);
       });
   }
 
@@ -52,10 +54,9 @@ let pokemonRepository = (function () {
       })
       .then(function (details) {
         item.imageUrl = details.sprites.front_default;
-
         item.height = details.height;
         item.types = details.types.map(function (pokemon) {
-          return pokemon.type.name;
+          return pokemon.type.name; 
         });
       })
       .catch(function (a) {
@@ -69,6 +70,7 @@ let pokemonRepository = (function () {
     });
   }
 
+  // MODAL
   function showModal(pokemon) {
     let modalContainer = document.querySelector("#modal-container");
     modalContainer.innerHTML = "";
@@ -93,14 +95,15 @@ let pokemonRepository = (function () {
     let typesElement = document.createElement("p");
     typesElement.innerText = "Types: " + pokemon.types[("0", "1")];
 
+
+    
     modal.appendChild(closeButtonElement);
     modal.appendChild(titleElement);
     modal.appendChild(imageElement);
     modal.appendChild(heightElement);
     modal.appendChild(typesElement);
-    modalContainer.appendChild(modal);
+    modalContainer.appendChild(modal); 
 
-    modalContainer.classList.add("is-visible");
   }
 
   function hideModal() {
@@ -134,12 +137,6 @@ let pokemonRepository = (function () {
   };
 })();
 
-console.log(pokemonRepository.getAll());
-pokemonRepository.add({
-  name: "Pikachu",
-  height: 7,
-  types: ["electric", "thunder"],
-});
 
 pokemonRepository.loadList().then(function () {
   pokemonRepository.getAll().forEach(function (pokemon) {

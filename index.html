@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width" />
     <title>Simple JS App</title>
 
+    <link rel="icon" href="img/Pokedex.ico" type="image"/>
+
     <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
@@ -16,34 +18,42 @@
   </head>
 
   <body>
+    
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-danger bg-dark">
-      <a class="navbar-brand" href="#">Pokedex</a>
+    <div id="modal-container"></div>
 
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <a class="navbar-brand" href="#">Pokedex</a>
       <button
         class="navbar-toggler"
         type="button"
         data-toggle="collapse"
-        data-target="#navbarNavDropdown"
-        aria-controls="navbarNavDropdown"
+        data-target="#navbarNav"
+        aria-controls="navbarNav"
         aria-expanded="false"
         aria-label="Toggle navigation"
       >
         <span class="navbar-toggler-icon"></span>
       </button>
-
-      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav">
           <li class="nav-item active">
-            <a class="nav-link btn btn-primary" href="#"
+            <a class="nav-link" href="#"
               >Home <span class="sr-only">(current)</span></a
             >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Features</a>
+          </li>
+          <li class="nav-item">
+            <a type="button" class="nav-link" href="#">About</a>
           </li>
         </ul>
       </div>
     </nav>
 
     <!-- Modal -->
+    <ul class="pokemon-list mt-6"></ul>
     <div
       class="modal fade"
       id="exampleModal"
@@ -74,15 +84,10 @@
             >
               Close
             </button>
-            <button type="button" class="btn btn-primary">Save changes</button>
-          </div>
+            </div>
         </div>
       </div>
     </div>
-
-    <div id="modal-container"></div>
-
-    <ul class="pokemon-list mt-6"></ul>
 
     <script
       src="https://code.jquery.com/jquery-3.5.1.js"

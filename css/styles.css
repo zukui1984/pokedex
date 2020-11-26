@@ -1,57 +1,40 @@
+
+
 html,
 body {
-  background-color: #d3d3d3;
-  font-family: "Verdana", sans-serif;
-  color: #20b2aa;
-  margin: auto;
-  justify-content: center;
-  padding: 40px;
-  font-size: 25px;
-  line-height: 2;
+  background-color: #20b2aa;
+  font-family: "Verdana", sans-serif;  
 }
 
-.button-class {
+
+.btn {
   background-color: black;
-  border: none;
+  border-style: solid;
   color: white;
-  padding: 16px 32px;
+  padding: 10px 16px;
   text-align: center;
   text-decoration: none;
   display: inLine-block;
   font-size: 16px;
   margin: 4px 2px;
-  -webkit-transition-duration: 0.4s;
-  transition-duration: 0.4s;
+  -webkit-transition-duration: 0.6s;
+  transition-duration: 0.6s;
   cursor: pointer;
   background-color: white;
   color: black;
   border: 2px solid green;
 }
 
-ul {
-  list-style-type: none;
-  text-align: center;
-}
-
-.modal-title {
-  
-}
-
-/* MODAL  
-#modal-container {
-  display: none;
-}
-
-#modal-container.is-visible {
+.modal-container {
   position: fixed;
   padding: 20px;
   box-sizing: border-box;
   top: 20px;
   left: 30px;
-  width: 70%;
-  height: 70%;
+  width: 30%;
+  height: 30%;
   display: block;
-}
+} 
 
 .modal {
   margin: auto;
@@ -59,10 +42,11 @@ ul {
   box-sizing: border-box;
   background: #fff;
   padding: 15px;
-  width: 100%;
-  max-width: 700px;
-  text-align: left;
+  width: 50%;
+  max-width: 500px;
+  text-align: center;
 }
+
 
 .modal-close {
   float: right;
@@ -73,12 +57,15 @@ ul {
   text-decoration: underline;
 }
 
-.modal h1 {
-  margin-top: 0;
+ul {
+  list-style-type: none;
+  text-align: center;
 }
 
-.modal p {
-  margin-bottom: 0;
+.modal-body {
+    background-color: #add8e6;
 }
-           */
 
+.navbar-toggler {
+  margin-right: 70px;
+}
