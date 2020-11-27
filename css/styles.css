@@ -23,14 +23,6 @@ body {
   border: 2px solid green;
 }
 
-/* .modal {
-  box-sizing: border-box;
-  padding: 15px;
-  width: 50%;
-  max-width: 600px;
-  text-align: center;
-} */
-
 .modal-container {
   position: fixed;
   padding: 20px;
@@ -41,8 +33,6 @@ body {
   height: 30%;
   display: block;
 }
-
-
 
 .modal-close {
   float: right;
