@@ -72,7 +72,7 @@ let pokemonRepository = (function () {
 
   // MODAL
 
-  function showModal(text) {
+  function showModal(pokemon) {
     let modalTitle = document.querySelector('.modal-title')
     modalTitle.innerText = "";
     
@@ -80,15 +80,15 @@ let pokemonRepository = (function () {
     modalBody.innerHTML = ""
     
     let imageElement = document.createElement('img');
-    imageElement.setAttribute('src', text.imageUrl);
+    imageElement.setAttribute('src', pokemon.imageUrl);
     
     let heightElement = document.createElement('p');
-    heightElement.innerText = 'Height: ' + text.height;
+    heightElement.innerText = 'Height: ' + pokemon.height;
     
     let typesElement = document.createElement('p');
-    typesElement.innerText = 'Types: ' + text.types;
+    typesElement.innerText = 'Types: ' + pokemon.types;
     
-    modalTitle.innerText = text.name
+    modalTitle.innerText = pokemon.name
     modalBody.appendChild(imageElement);
     modalBody.appendChild(heightElement);
     modalBody.appendChild(typesElement);
