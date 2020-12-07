@@ -12,6 +12,7 @@ body {
   padding: 10px 16px;
   text-align: center;
   text-decoration: none;
+  text-transform: capitalize;
   display: inline-block;
   line-height: 15px;
   margin: 5px 16px; 
@@ -27,6 +28,7 @@ body {
 .modal-container {
   position: fixed;
   padding: 20px;
+  text-transform: capitalize;
   box-sizing: border-box;
   top: 20px;
   left: 30px;
