@@ -4,7 +4,7 @@
 
 ## Screenshot
 
-https://github.com/zukui1984/simple-js-app/blob/master/img/pokedex.JPG 
+![pokedex](https://user-images.githubusercontent.com/71074389/112384094-4739af80-8cee-11eb-8922-cfe77c165ca2.JPG)
 
 ## Technical requirement:
 
