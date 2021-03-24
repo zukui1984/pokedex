@@ -4,7 +4,7 @@
 
 ## Screenshot
 
-![Pokemondetails]
+https://github.com/zukui1984/simple-js-app/blob/master/img/pokedex.JPG 
 
 ## Technical requirement:
 
