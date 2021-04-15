@@ -6,6 +6,11 @@
 
 ![pokedex](https://user-images.githubusercontent.com/71074389/112384094-4739af80-8cee-11eb-8922-cfe77c165ca2.JPG)
 
+## Demo Clip
+
+![pokedex](https://user-images.githubusercontent.com/71074389/114923484-2ff16c00-9e2d-11eb-8b5e-5bdd970abd3b.gif)
+
+
 ## Technical requirement:
 
 * External API
@@ -15,4 +20,4 @@
 
 ## URL
 
-https://zukui1984.github.io/simple-js-app/  
+https://zukui1984.github.io/pokedex/
